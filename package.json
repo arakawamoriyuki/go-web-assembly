@@ -1,0 +1,11 @@
+{
+  "name": "go-web-assembly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/arakawamoriyuki/go-web-assembly",
+  "author": "arakawamoriyuki <arakawamoriyuki@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
