@@ -1,5 +1,5 @@
 
-# go-tensorflow
+# go-web-assembly
 
 [Go 1.11 WebAssembly](https://github.com/golang/go/wiki/WebAssembly)
 
