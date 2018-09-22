@@ -1,1 +1,4 @@
 node_modules
+
+public/index.html
+public/wasm_exec.js

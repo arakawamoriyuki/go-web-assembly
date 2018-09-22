@@ -3,6 +3,15 @@
 
 [Go 1.11 WebAssembly](https://github.com/golang/go/wiki/WebAssembly)
 
+### example
+
+```
+$ open https://arakawamoriyuki.github.io/go-web-assembly/index.html
+```
+
+1. console開いてrunボタンを押す。
+2. consoleに `Hello Go WebAssembly` が出る (`src/main/main.go` がブラウザで動作)
+
 ## ENV
 
 ```

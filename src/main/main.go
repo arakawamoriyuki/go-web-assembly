@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("TODO:")
+	fmt.Println("Hello Go WebAssembly")
 }
