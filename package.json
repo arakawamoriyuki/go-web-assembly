@@ -1,8 +1,22 @@
 {
   "name": "go-web-assembly",
+  "homepage": "https://arakawamoriyuki.github.io/go-web-assembly",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/arakawamoriyuki/go-web-assembly",
+  "engines": {
+    "node": ">=10.10.0",
+    "yarn": ">=1.9.4"
+  },
+  "scripts": {
+    "setup": "yarn setup:index.html && yarn setup:wasm_exec.js",
+    "setup:index.html": "curl -o public/index.html https://raw.githubusercontent.com/golang/go/master/misc/wasm/wasm_exec.html",
+    "setup:wasm_exec.js": "curl -o public/wasm_exec.js https://raw.githubusercontent.com/golang/go/master/misc/wasm/wasm_exec.js",
+    "build": "GOOS=js GOARCH=wasm go build -o public/test.wasm src/main/main.go",
+    "deploy": "yarn build && gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arakawamoriyuki/go-web-assembly"
+  },
   "author": "arakawamoriyuki <arakawamoriyuki@gmail.com>",
   "license": "MIT",
   "dependencies": {
