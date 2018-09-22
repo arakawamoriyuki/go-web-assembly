@@ -32,16 +32,16 @@ TODO:
 
 ### Hello Go WebAssembly
 
-TODO:
+[サクッと Go → WebAssembly を試す](https://qiita.com/cia_rana/items/bbb4112b480636ab9d87)
+
+```
+$ curl -o public/index.html https://raw.githubusercontent.com/golang/go/master/misc/wasm/wasm_exec.html
+$ curl -o public/wasm_exec.js https://raw.githubusercontent.com/golang/go/master/misc/wasm/wasm_exec.js
+$ GOOS=js GOARCH=wasm go build -o public/test.wasm src/main/main.go
+$ go run src/server/server.go
+$ open http://localhost:5555/
+```
 
 ### できる事
-
-TODO:
-
-### example gh-pages
-
-```
-$ yarn install
-```
 
 TODO:
